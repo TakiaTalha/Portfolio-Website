@@ -5,11 +5,12 @@
 .Header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,.9),rgba(4,9,30,.9)),url(images/IMG_5708.jpg);
+    background-image: linear-gradient(rgba(4,9,30,.7),rgba(4,9,30,.7)),url(images/bg1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
+/*navigation bar*/
 nav img {
     width: 60px; 
     height: auto; 
@@ -60,13 +61,76 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
+    text-align: left;
 }
 .text-box h1{
-    font-size: 62px;
+    font-size: 68px;
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 25px;
     color: #fff;
+}
+#transition-text {
+    transition: opacity 1s ease-in-out;
+}
+.hi-logo {
+    width: 100px;
+} 
+/*social links*/
+.social-links img{
+     width: 40px; 
+}
+.social-links{
+    flex: 1;
+    text-align: left;
+}
+.social-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/*fade and enlarge the social icons on hover*/
+.social-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.gradient-divider {
+    height: 50px; /* Adjust the height of the gradient */
+    background: linear-gradient(#191f2f, #f8d08b); /* Blend from orange to sky blue */
+} 
+/*About section*/
+.About-Me{
+    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(images/bg3.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+}
+.about-me-text{
+    width: 25%;          /* Width of the box */
+    padding: 200px;       /* Padding inside the box */
+    margin: 0 auto;      /* Centering the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Optional: adds a subtle shadow */
+    background-color: #f8d08b; /* Background color of the box */
+    text-align: center;    /* Aligns the text to the left */
+    position: relative;  /* Needed for positioning */
+    left: 20%;  
+}
+#AM{
+    font-size: 50px;
+    font-weight: bold;
+    color: #4c2a63;
+}
+#Intro{
+    font-size: 30px;
+    font-weight: bold;
+    color: #4c2a63;
 }
