@@ -1,11 +1,13 @@
-*{
+*{ 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
 }
 .Header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,.7),rgba(4,9,30,.7)),url(images/bg1.jpg);
+    background-image: linear-gradient(rgba(4,9,30,.9),rgba(4,9,30,.9)),url(images/IMG_5710.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -23,8 +25,11 @@ nav img:hover {
 nav{
     display: flex;
     padding: 1% 2%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .nav-links{
     flex: 1;
@@ -34,13 +39,21 @@ nav{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
+    font-size: larger;
     position: relative;
+    
 }
 .nav-links ul li a{
-    color: #fff;
+    color: #81417d;
     text-decoration: none;
     font-size: 15px;
     font: 1em Rubik;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(215, 196, 86), rgb(250, 250, 242)); /* Define your gradient colors and direction */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+
 }
 .nav-links ul li::after{
     content: '';
@@ -65,6 +78,7 @@ nav{
 }
 .text-box h1{
     font-size: 68px;
+    
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -73,6 +87,11 @@ nav{
 }
 #transition-text {
     transition: opacity 1s ease-in-out;
+    font-size: larger;
+    background-image: linear-gradient(to top, rgb(215, 196, 86), rgb(250, 250, 242)); /* Define your gradient colors and direction */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
 }
 .hi-logo {
     width: 100px;
@@ -100,37 +119,75 @@ nav{
     transform: scale(1.1);
     opacity: 0.8;
 }
+.download-button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 10px;
+    margin-left: 10PX;
+    background-color: #dee776;
+    color: rgb(17, 2, 2);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
 .gradient-divider {
     height: 50px; /* Adjust the height of the gradient */
-    background: linear-gradient(#191f2f, #f8d08b); /* Blend from orange to sky blue */
+    background: linear-gradient(#191f2f, #31314a); /* Blend from orange to sky blue */
 } 
 /*About section*/
 .About-Me{
-    background-image: linear-gradient(rgba(4,9,30,0),rgba(4,9,30,0)),url(images/bg3.jpg);
-    min-height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; 
+    background-color: #31314a;
+    min-height: 10vh;
+    width: 100%;  
+    background-size: cover;
 
 }
+.about-me-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0, auto;
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+}
 .about-me-text{
-    width: 25%;          /* Width of the box */
-    padding: 200px;       /* Padding inside the box */
+    width: 600px;          /* Width of the box */
+    padding: 150px;       /* Padding inside the box */
     margin: 0 auto;      /* Centering the box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Optional: adds a subtle shadow */
-    background-color: #f8d08b; /* Background color of the box */
+    background-color: #31314a; /* Background color of the box */
     text-align: center;    /* Aligns the text to the left */
     position: relative;  /* Needed for positioning */
-    left: 20%;  
+    left: 1%;  
 }
+
 #AM{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
-    color: #4c2a63;
+    color: rgb(8, 39, 66);
+    text-shadow:
+    0 0 2px rgb(228, 229, 230), /* First layer of glow */
+    0 0 10px rgb(255, 255, 255), /* Second layer of glow */
+    0 0 5px rgb(255, 255, 255), /* Third layer of glow */
+    0 -1px 7px #ffffff, /* Fourth layer of glow, with negative spread */
+    0 -2px 10px #ffffff, /* Fifth layer of glow, with larger negative spread */
+    0 2px 12px rgba(0,0,0,0.4);
+
 }
 #Intro{
-    font-size: 30px;
-    font-weight: bold;
-    color: #4c2a63;
+    font-size: 15px;
+    font-weight: 400;
+    color: #f9f9f4;
+    margin-top: 10px;
 }
+#about-me-image{
+    width: 200px;
+    margin-left: 60px;
+}
+.gradient2{
+    height: 50px; /* Adjust the height of the gradient */
+    background: linear-gradient( #31314a, #191f2f); /* Blend from orange to sky blue */
+} 
