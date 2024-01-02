@@ -30,3 +30,9 @@ window.addEventListener('scroll', function() {
         document.querySelector('.right-border').style.height = '100%';
     }
 });
+function scrollleft() {
+    document.getElementById("scrolling-text").style.left = '100%';
+    setTimeout(scrollleft, 25);
+  }
+    scrollleft();
+

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
 *{ 
     box-sizing: border-box;
     margin: 0;
@@ -39,21 +40,21 @@ nav{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
-    font-size: larger;
+    font-size: 20px;
     position: relative;
     
 }
 .nav-links ul li a{
     color: #81417d;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 10px;
     font: 1em Rubik;
     cursor: pointer;
-    background-image: linear-gradient(to right, rgb(215, 196, 86), rgb(250, 250, 242)); /* Define your gradient colors and direction */
+    background-image: linear-gradient(to right, #94d2e5, rgb(250, 250, 242)); /* Define your gradient colors and direction */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
-
+    font-weight: bold;
 }
 .nav-links ul li::after{
     content: '';
@@ -88,10 +89,11 @@ nav{
 #transition-text {
     transition: opacity 1s ease-in-out;
     font-size: larger;
-    background-image: linear-gradient(to top, rgb(215, 196, 86), rgb(250, 250, 242)); /* Define your gradient colors and direction */
+    background-image: linear-gradient(to top, #94d2e5, rgb(250, 250, 242)); /* Define your gradient colors and direction */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
+    font-weight: bold;
 }
 .hi-logo {
     width: 100px;
@@ -124,7 +126,7 @@ nav{
     padding: 10px 25px;
     margin-top: 10px;
     margin-left: 10PX;
-    background-color: #dee776;
+    background-color: #94d2e5;
     color: rgb(17, 2, 2);
     text-align: center;
     text-decoration: none;
@@ -138,7 +140,7 @@ nav{
 /*About section*/
 .About-Me{
     background-color: #31314a;
-    min-height: 10vh;
+    min-height: 60vh;
     width: 100%;  
     background-size: cover;
 
@@ -154,26 +156,20 @@ nav{
     padding: 0 50px;
 }
 .about-me-text{
-    width: 600px;          /* Width of the box */
-    padding: 150px;       /* Padding inside the box */
-    margin: 0 auto;      /* Centering the box */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Optional: adds a subtle shadow */
-    background-color: #31314a; /* Background color of the box */
-    text-align: center;    /* Aligns the text to the left */
-    position: relative;  /* Needed for positioning */
-    left: 1%;  
+    background-image: linear-gradient(#31314a,#31314a,url(images/textbg.jpg));
+    padding: 50px
 }
 
 #AM{
     font-size: 40px;
     font-weight: bold;
-    color: rgb(8, 39, 66);
+    color: #94d2e5;
     text-shadow:
-    0 0 2px rgb(228, 229, 230), /* First layer of glow */
-    0 0 10px rgb(255, 255, 255), /* Second layer of glow */
+    0 0 2px rgb(13, 30, 48), /* First layer of glow */
+    0 0 10px #b5acac, /* Second layer of glow */
     0 0 5px rgb(255, 255, 255), /* Third layer of glow */
-    0 -1px 7px #ffffff, /* Fourth layer of glow, with negative spread */
-    0 -2px 10px #ffffff, /* Fifth layer of glow, with larger negative spread */
+    0 -1px 7px #b5acac, /* Fourth layer of glow, with negative spread */
+    0 -2px 10px #b5acac, /* Fifth layer of glow, with larger negative spread */
     0 2px 12px rgba(0,0,0,0.4);
 
 }
@@ -191,3 +187,206 @@ nav{
     height: 50px; /* Adjust the height of the gradient */
     background: linear-gradient( #31314a, #191f2f); /* Blend from orange to sky blue */
 } 
+.falling-text {
+    position: relative;
+  -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(249, 249, 249, 0.1));
+    font-size: 50px;
+}
+.falling-text span {
+    position: relative;
+    display: inline-block;
+    color: #fcfcfc;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    font-weight: bolder;
+}
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+.education{
+    background-color: #191f2f;
+    min-height: 10vh;
+    width: 100%;  
+    background-size: cover;
+    text-align: center;
+}
+.f1{
+    font-size: 27px;
+    font-weight: bolder;
+    color: #94d2e5;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 35px;
+}
+.f2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9f9f4;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 35px;
+
+}
+.f3{
+    font-size: 15px;
+    font-weight: 400;
+    color: #f9f9f4;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 35px;
+}
+.education-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0, auto;
+    height: 500px;
+    width: 100%;
+    padding: 0 50px;
+}
+.education-container img{
+    width: 200px;
+    margin-left: 60px;
+}
+/*skills section*/
+.skills{
+    background-color: #31314a;
+    min-height: 80vh;
+    width: 100%;  
+    background-size: cover;
+    text-align: center;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    height: 100px;
+    width: 100%;
+    padding: 0 50px;
+}
+.skills img{
+    width: 300px;
+}
+.scrolling-text {
+    position: relative;
+  -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(249, 249, 249, 0.1));
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+k{
+    position: relative;
+    font-size:  50px;
+    color: #31314a;
+    -webkit-text-stroke: 0.1vw #424263;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+}
+k::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #edf4f6;
+    -webkit-text-stroke: 0.1vw #424263; 
+    border-right: #f3fbfd solid 2px;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+
+}
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0%;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+ /*Experience section*/
+.experience{
+    background-color: #191f2f;
+    width: 100%;  
+    background-size: cover;
+    text-align: center;
+}
+.exp-title{
+    font-size: 27px;
+    font-weight: bolder;
+    color: #eff6f8;
+    text-align: center;
+    margin-left: 35px;
+
+}
+.experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    padding: 0 50px;
+}
+.experience img{
+    width: 400px;
+    margin-left: 60px;
+}
+/* .project-item{
+    background: linear-gradient(rgba(137, 163, 185, 0.9),rgba(239, 234, 234, 0.9));
+    height: 310px;
+    margin: 10px auto;
+    perspective: 1500px;
+    position: relative;
+    width: 410px;
+.project-title{
+        border-bottom: 1px solid #333;
+        margin: 0 40px;
+        padding: 110px 0 2px;
+}
+.top{
+    height: 50%;
+    transition: all 0.5s ease-out;
+    transform: rotateX(0deg);
+    transform-origin: 0 100%;
+    transform-style: preserve-3d;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    z-index: 10;
+    .face{ backface-visibility: hidden;
+}   position: absolute;
+}
+&:hover .top{
+    transform: rotateX(-180deg);
+}
+.front{
+    background-image: linear-gradient(#94d2e5, rgb(250, 250, 242),);
+    height: 100%;
+    width: 100%;
+}
+.back{
+    background-image: linear-gradient(#94d2e5, rgb(250, 250, 242),url(images/Nuclease.jpg));
+    height: 100%;
+    padding: 0 40px;
+
+    width: 100%;
+    transform: rotateX(180deg);
+}
+.bottom{
+    background: url(images/Nuclease.jpg) bottom;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 0;
+  }
+} */
