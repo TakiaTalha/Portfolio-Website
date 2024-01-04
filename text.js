@@ -18,21 +18,21 @@ function changeText() {
 // Change text every 4 seconds
 setInterval(changeText, 1000);
 
-window.addEventListener('scroll', function() {
-    var element = document.getElementById('animatedBox');
-    var position = element.getBoundingClientRect();
+// window.addEventListener('scroll', function() {
+//     var element = document.getElementById('animatedBox');
+//     var position = element.getBoundingClientRect();
 
-    // Checking if the element is within the viewport
-    if(position.top < window.innerHeight && position.bottom >= 0) {
-        document.querySelector('.top-border').style.width = '100%';
-        document.querySelector('.bottom-border').style.width = '100%';
-        document.querySelector('.left-border').style.height = '100%';
-        document.querySelector('.right-border').style.height = '100%';
-    }
-});
-function scrollleft() {
-    document.getElementById("scrolling-text").style.left = '100%';
-    setTimeout(scrollleft, 25);
-  }
-    scrollleft();
+//     // Checking if the element is within the viewport
+//     if(position.top < window.innerHeight && position.bottom >= 0) {
+//         document.querySelector('.top-border').style.width = '100%';
+//         document.querySelector('.bottom-border').style.width = '100%';
+//         document.querySelector('.left-border').style.height = '100%';
+//         document.querySelector('.right-border').style.height = '100%';
+//     }
+// });
+// function scrollleft() {
+//     document.getElementById("scrolling-text").style.left = '100%';
+//     setTimeout(scrollleft, 25);
+//   }
+//     scrollleft();
 

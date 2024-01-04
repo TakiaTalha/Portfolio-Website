@@ -5,6 +5,9 @@
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
 }
+section{
+    display: block;
+}
 .Header{
     min-height: 100vh;
     width: 100%;
@@ -273,120 +276,203 @@ nav{
     padding: 0 50px;
 }
 .skills img{
-    width: 300px;
+width: 300px;
 }
 .scrolling-text {
-    position: relative;
-  -webkit-box-reflect: below -15px linear-gradient(transparent, rgba(249, 249, 249, 0.1));
-    font-size: 60px;
-    margin-bottom: 50px;
+position: relative;
+-webkit-box-reflect: below -15px linear-gradient(transparent, rgba(249, 249, 249, 0.1));
+font-size: 60px;
+margin-bottom: 50px;
 }
 k{
-    position: relative;
-    font-size:  50px;
-    color: #31314a;
-    -webkit-text-stroke: 0.1vw #424263;
-    text-transform: uppercase;
-    font-weight: bolder;
-    letter-spacing: 10px;
-    margin-bottom: 15px;
+position: relative;
+font-size:  50px;
+color: rgb(49, 49, 74);
+-webkit-text-stroke: 0.1vw #424263;
+text-transform: uppercase;
+font-weight: bolder;
+letter-spacing: 10px;
+margin-bottom: 15px;
 }
 k::before{
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    color: #edf4f6;
-    -webkit-text-stroke: 0.1vw #424263; 
-    border-right: #f3fbfd solid 2px;
-    overflow: hidden;
-    animation: animate 5s linear infinite;
+content: attr(data-text);
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+color: #edf4f6;
+-webkit-text-stroke: 0.1vw #424263; 
+border-right: #f3fbfd solid 2px;
+overflow: hidden;
+animation: animate 5s linear infinite;
 
 }
 @keyframes animate{
-    0%, 10%, 100%{
-        width: 0%;
-    }
-    70%,90%{
-        width: 100%;
-    }
+0%, 10%, 100%{
+    width: 0%;
 }
- /*Experience section*/
+70%,90%{
+    width: 100%;
+}
+}
+/*Experience section*/
 .experience{
-    background-color: #191f2f;
+background-color: #191f2f;
+width: 100%;  
+background-size: cover;
+text-align: center;
+}
+.exp-title{
+font-size: 27px;
+font-weight: bolder;
+color: #eff6f8;
+text-align: center;
+margin-left: 35px;
+
+}
+.experience-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+justify-self: center;
+width: 100%;
+padding: 0 50px;
+}
+.experience img{
+width: 400px;
+margin-left: 60px;
+}
+/* Project Sectiom */
+.projects{
+background-color: #31314a;
+min-height: 80vh;
+width: 100%;  
+}
+.pro-title{
+font-size: 30px;
+font-weight: bolder;
+color: #eff6f8;
+text-align: center;
+margin-bottom: 35px;
+margin-left: 35px;
+}
+.project-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+align-items: center;
+justify-self: center;
+width: 100%;
+padding: 0 200px;
+row-gap: 10px;
+}
+.project-container img{
+width: 250px;
+height: 150px;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+.project-text h1{
+font-size: 20px;
+font-weight: bolder;
+color: #94d2e5;
+text-align: center;
+}
+.project-text p{
+font-size: 15px;
+font-weight: 400;
+color: #f9f9f4;
+text-align: center;
+margin-bottom: 5px;
+}
+.project-text a{
+font-size: 15px;
+font-weight: 400;
+color: #dfdf39;
+text-align: center;
+margin-bottom: 10px;
+margin-left: 90px;
+}
+.contact{
+background-color: #191f2f;
+min-height: 80vh;
+width: 100%;  
+background-size: cover;
+text-align: center;
+}
+.contact-title{
+font-size: 30px;
+font-weight: bolder;
+color: #eff6f8;
+text-align: center;
+margin-bottom: 35px;
+margin-left: 35px;
+}
+
+.contact-container{
+display: block;
+width: 60%;
+margin-left: 250px;
+}
+.contact-container label{
+font-size: 20px;
+font-weight: bolder;
+color: #82cef4fb;
+text-align: center;
+margin-bottom: 35px;
+margin-left: 10px;
+
+}
+
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #0f086e; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical ;/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #43a4c2;
+color: white;
+font-weight: bold;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #6650c6;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 5px;
+background-color: transparent;
+padding: 20px;
+}
+/*footer*/  
+.footer{
+    background: linear-gradient( #31314a, #191f2f ); 
+    min-height: 10vh;
     width: 100%;  
     background-size: cover;
     text-align: center;
 }
-.exp-title{
-    font-size: 27px;
+.footer img{
+    width: 50px;
+    margin-left: 50px;
+}
+.footer-text{
+    font-size: 15px;
     font-weight: bolder;
-    color: #eff6f8;
+    color: #f9f9f4;
     text-align: center;
     margin-left: 35px;
-
 }
-.experience-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
-    padding: 0 50px;
-}
-.experience img{
-    width: 400px;
-    margin-left: 60px;
-}
-/* .project-item{
-    background: linear-gradient(rgba(137, 163, 185, 0.9),rgba(239, 234, 234, 0.9));
-    height: 310px;
-    margin: 10px auto;
-    perspective: 1500px;
-    position: relative;
-    width: 410px;
-.project-title{
-        border-bottom: 1px solid #333;
-        margin: 0 40px;
-        padding: 110px 0 2px;
-}
-.top{
-    height: 50%;
-    transition: all 0.5s ease-out;
-    transform: rotateX(0deg);
-    transform-origin: 0 100%;
-    transform-style: preserve-3d;
-    position: absolute;
-    top:0px;
-    width: 100%;
-    z-index: 10;
-    .face{ backface-visibility: hidden;
-}   position: absolute;
-}
-&:hover .top{
-    transform: rotateX(-180deg);
-}
-.front{
-    background-image: linear-gradient(#94d2e5, rgb(250, 250, 242),);
-    height: 100%;
-    width: 100%;
-}
-.back{
-    background-image: linear-gradient(#94d2e5, rgb(250, 250, 242),url(images/Nuclease.jpg));
-    height: 100%;
-    padding: 0 40px;
-
-    width: 100%;
-    transform: rotateX(180deg);
-}
-.bottom{
-    background: url(images/Nuclease.jpg) bottom;
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    z-index: 0;
-  }
-} */
