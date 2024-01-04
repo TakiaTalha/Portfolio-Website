@@ -7,58 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="Header">
+    <section class="Header", id = "sec1">
         <nav>
             <div class="nav-links" >
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT ME</a></li>
-                    <li><a href="">EDUCATION</a></li>
-                    <li><a href="">SKILLS</a></li>
-                    <li><a href="">EXPERIENCE</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#sec1">HOME</a></li>
+                    <li><a href="#sec2">ABOUT ME</a></li>
+                    <li><a href="#sec3">EDUCATION</a></li>
+                    <li><a href="#sec4">SKILLS</a></li>
+                    <li><a href="#sec5">EXPERIENCE</a></li>
+                    <li><a href="#sec6">PROJECTS</a></li>
+                    <li><a href="#sec7">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
         <div class="text-box">
-            <img src="images\hi.png" class="hi-logo">
-            <h1> I'm <span class="name"> Takia </span></h1>
-            <p>I'm a <span id="transition-text">CS Student</span></p>
-            
-        <div class="social-links">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/kazi-takia-talha-27ab03253" target="_blank"><img src="images/link.png" alt="Linkedin"></a></li>
-                <li><a href="https://github.com/TakiaTalha" target="_blank"><img src="images/git.png" alt="Github"></a></li>
-                <!-- <li><a href="https://www.instagram.com/takia.talha/?igsh=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank"><img src="images/insta.png" alt="Instagram"></a></li> -->
-                <li><a href=""><img src="images/mail.png" alt="Email"></a></li> 
-            </ul>
-        </div>
-        <div class="button">
-            <a href="Talha_Kazi_Takia-Resume.pdf" download="Resume.pdf" class="download-button">Download Resume</a>
-        </div>
+            <div class="text-grid">
+                <img src="images\hi.png" class="hi-logo">
+                <h1> I'm <span class="name"> Takia </span></h1>
+                <p>I'm a <span id="transition-text">CS Student</span></p>
+                
+                <div class="social-links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/kazi-takia-talha-27ab03253" target="_blank"><img src="images/link.png" alt="Linkedin"></a></li>
+                    <li><a href="https://github.com/TakiaTalha" target="_blank"><img src="images/git.png" alt="Github"></a></li>
+                    <!-- <li><a href="https://www.instagram.com/takia.talha/?igsh=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr" target="_blank"><img src="images/insta.png" alt="Instagram"></a></li> -->
+                    <li><a href="mailto:takia.talha@mail.utoronto.ca"><img src="images/mail.png" alt="Email"></a></li> 
+                </ul>
+                </div>
+                <div class="button">
+                <a href="Talha_Kazi_Takia-Resume.pdf" download="Resume.pdf" class="download-button">Download Resume</a>
+                </div>
+            </div>
+            <div class="text-gif">
+                <img src="images\cat.gif" alt="gif image">
+            </div>
         </div>
     </section>
     <section class = "gradient-divider">
         <p> </p>
     </section>
-    <section class ='About-Me'>
-        <div class="about-me-container" id="fade-in">
+    <section class ='About-Me' id="sec2">
+        <div class="about-me-title">
+            <h1>ABOUT ME</h1>
+        </div>
+        <div class="about-me-container">
             <div class="about-me-icon">
                 <img src="images\icon.png" alt="female avatar" id = about-me-image>
             </div>
             <div class="about-me-text">
-             <h1 id = "AM">ABOUT ME</h1>
-             <p id="Intro">My name is Kazi Takia Talha. I am currently a second year student at University of Toronto Mississauga.I am doing a specialist in Computer Science
+             <p class="comment">My name is Kazi Takia Talha. I am currently a second year student at University of Toronto Mississauga.I am doing a specialist in Computer Science
                 and a major in Mathematics.I am interested in both Web development and Machine Learning</p>
-            </div>
-            
+            </div>  
         </div>
     </section>
     <section class = "gradient2">
         <p> </p>        
     </section>
-    <section class="education">
+    <section class="education" id=" sec3">
         <div class="falling-text">
             <span style="--i:1">E</span>
             <span style="--i:2">D</span>
@@ -74,7 +80,7 @@
             <div class="edu-text">
              <div class="education-text">
                 <h3 class = "f1">University of Toronto</h3>
-                <p class = "f2">Computer Science Specialist and Math Major (PEY) </p>
+                <p class = "f2">Computer Science Specialist & Math Major (PEY) </p>
                 <p class = "f3"> Sept 2022 - Apr 2027  <br> CGPA: 3.75/4.0 </p>
              </div> 
              <div class="education-text"> 
@@ -93,7 +99,7 @@
     <section class = "gradient-divider">
         <p> </p>
     </section>
-    <section class="skills">
+    <section class="skills" id="sec4">
         <div class="scrolling-text">
             <k data-text ="SKILLS" > SKILLS </k> 
         </div>
@@ -117,10 +123,10 @@
             </div>
         </div>
     </section>
-    <section class = "gradient2">
+    <section class = "gradient2" id="sec5">
         <p> </p>
     </section>
-    <section class="experience">
+    <section class="experience" >
      <div class="exp-title">
         <h1> RELEVANT EXPERIENCES</h1>
      </div>
@@ -150,13 +156,13 @@
         </div>
      </div>
     </section>
-    <section class = "gradient-divider">
+    <section class = "gradient-divider" id="sec6">
         <p> </p>
     </section>
-    <section class="projects">
+    <section class="projects" >
         <div class="pro-title">PROJECTS</div>
         <div class="project-container">
-            <div class="project-item">
+            <div class="project-card">
                 <img src="images/ML.gif" alt="Project1_img">
                 <div class="project-text">
                     <h1 >NucleAIse</h1>
@@ -164,36 +170,28 @@
                     <a href="https://github.com/ambroseling/NucleAIse"target="_blank">View Project</a>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-card">
                 <img src="images/giphy.gif" alt="Project2_img">
                 <div class="project-text">
                     <h1>Adventure Game</h1>
-                    <p > A machine learning model that predicts protein function from protein sequences</p>
+                    <p > An adventure game using <br> Java and JavaFX</p>
                     <a href="https://github.com/TakiaTalha/Adventure-Game"target="_blank">View Project</a>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-card">
                 <img src="images/sokoban.gif" alt="Project1_img">
                 <div class="project-text">
                     <h1 >Sokoban</h1>
-                    <p > A machine learning model that predicts protein function from protein sequences</p>
+                    <p > The classic Sokoban written <br> in Assembly</p>
                     <a href="sokoban.pdf"target="_blank">View Project</a>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-card">
                 <img src="images/ig.gif" alt="Project1_img">
                 <div class="project-text" >
                     <h1>iGraphics Project</h1>
-                    <p> A machine learning model that predicts protein function from protein sequences</p>
+                    <p> A game written in C and C++</p>
                     <a href="https://github.com/ananyapromi3/iGraphics-project"target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project-item">
-                
-                </div>
-            </div>
-            <div class="project-item">
-                
                 </div>
             </div>
         </div>
@@ -201,7 +199,7 @@
     <section class = "gradient2">
         <p> </p>
     </section>
-    <section class="contact">
+    <section class="contact" id="sec7">
         <div class="contact-title">
             <h1>CONTACT</h1>
         </div>
@@ -246,6 +244,8 @@
                 <img src="images\logo.png" alt="logo image">
             </div>
         </div>
+    </section>
+    
 
     <script src="text.js"></script>
 
