@@ -747,7 +747,7 @@ input[type=submit]:hover {
     }
 }
 
-@media only screen and (max-width :800px){
+@media only screen and (max-width :800px ) and (min-width : 500px){
     /* Header */
     .text-box h1{
         font-size: 50px;
@@ -761,7 +761,7 @@ input[type=submit]:hover {
     }
     /* Experience */
     .experience{
-        height: 800px;
+        height: 1000px;
     }
     .experience-container img{
         width: 200px;
