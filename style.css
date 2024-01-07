@@ -740,10 +740,15 @@ input[type=submit]:hover {
     }
     /*Experience section*/
     .experience{
-        height: 1300px;
+        height: 1400px;
     }
     .exp-title{
         font-size: 20px;
+    }
+    .experience-container{
+        max-height: 1300px;
+        overflow-y: auto;
+        overflow-x: visible;
     }
     .experience-container img{
         width: 100px;
