@@ -113,7 +113,12 @@ nav{
 }
 .social-links{
     flex: 1;
-    text-align: left;
+    margin: auto;
+}
+.social-links ul{
+    display: inline-flex;
+    list-style: none;
+    margin: auto;
 }
 .social-links ul li{
     list-style: none;
@@ -184,6 +189,7 @@ nav{
     border: 3px solid rgb(245, 240, 240);
     border-radius: 18px;
     display: flex;
+    /* overflow: scroll; */
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
@@ -220,8 +226,9 @@ nav{
     font-size: 1.4rem;
     font-size: 15px;
     font-weight: 400;
-    margin-top: 10px;
+    margin :auto;
     color: #ffffff;
+    flex-shrink: 1;
 }
 .comment::before , .comment::after{
     content: "\201C";
@@ -403,7 +410,7 @@ k::before{
     font-weight: bolder;
     color: #eff6f8;
     text-align: center;
-    margin-left: 35px;
+    margin: auto;
 
 }
 .experience-container{
@@ -430,7 +437,7 @@ k::before{
     color: #eff6f8;
     text-align: center;
     margin-bottom: 35px;
-    margin-left: 35px;
+    margin: auto;
 }
 .project-container {
     display: grid;
@@ -493,13 +500,13 @@ k::before{
     color: #eff6f8;
     text-align: center;
     margin-bottom: 35px;
-    margin-left: 35px;
+    margin: auto;
 }
 
 .contact-container{
     display: block;
     width: 60%;
-    margin-left: 250px;
+    margin: auto;
 }
 .contact-container label{
     font-size: 20px;
@@ -507,7 +514,8 @@ k::before{
     color: #82cef4fb;
     text-align: center;
     margin-bottom: 35px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin: auto;
 
 }
 
@@ -572,7 +580,7 @@ input[type=submit]:hover {
 
 
 
-@media only screen and (max-width :430px){
+@media only screen and (max-width :533px){
 
     /* Header */
     /* menu create  not imp*/
@@ -584,11 +592,8 @@ input[type=submit]:hover {
         margin-top: 100px;
     }
     .text-gif img{
-        height: 150px;
+        height: 100px;
         margin-bottom: 25px;
-    }
-    .social-links{
-        margin-left: 90px;
     }
      
     /*About section*/
@@ -606,6 +611,8 @@ input[type=submit]:hover {
         height: 300px;
         margin-top: 50px;
         margin-left: 0px;
+        overflow-y: visible;
+        overflow-x: visible;
     }
 
     /*education section*/
@@ -654,7 +661,7 @@ input[type=submit]:hover {
     /* Contact */
     .contact-container{
         width: 100%;
-        margin-left: 0px;
+        margin: auto;
     }
     .text-box{
         margin-top: 140px;
@@ -676,9 +683,6 @@ input[type=submit]:hover {
     }
     .social-links img{
         width: 30px;
-    }
-    .social-links{
-        margin-left: 40px;
     }
     .text-gif img{
         height: 90px;
@@ -743,11 +747,18 @@ input[type=submit]:hover {
     }
     .experience-container img{
         width: 100px;
-        margin-right: 35px;
+        margin:auto
     }
 }
 
-@media only screen and (max-width :800px ) and (min-width : 500px){
+@media screen and (max-width: 424px) {
+    .text-box p{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width :800px ) and (min-width : 534px){
     /* Header */
     .text-box h1{
         font-size: 50px;
@@ -759,19 +770,34 @@ input[type=submit]:hover {
     .text-box p{
         font-size: 20px;
     }
+    /*About section*/   
+    .about-me-text{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #about-me-image{
+        width: 100px;
+    }
     /* Experience */
     .experience{
         height: 1000px;
     }
     .experience-container img{
         width: 200px;
-        margin-right: 35px;
+        margin: auto;
     }
 
      /* contact */
         .contact-container{
             width: 80%;
-            margin-left: 80px;
+            margin: auto;
         }
 
+}
+
+@media only screen and (max-width : 415px){
+      .about-me-text{
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
 }
